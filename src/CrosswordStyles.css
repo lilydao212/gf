@@ -1,49 +1,90 @@
-/* Layout container to force side-by-side */
-.crossword-container {
-  display: flex;
-  flex-direction: row;
-  gap: 2rem;
-  background: white;
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #ffeef5;
+}
+
+.page-container {
   padding: 2rem;
-  border-radius: 1rem;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-  max-width: 1000px;
-  width: 100%;
-}
-
-.crossword-wrapper {
-  flex: 1;
-  min-width: 300px;
-}
-
-.sidebar {
-  width: 300px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-/* Modal box style */
-.modal {
-  background: #ffe4ec;
-  border: 2px solid #f48fb1;
+.title {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #d6336c;
+}
+
+.layout {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.puzzle-container {
+  background-color: white;
   padding: 1rem;
   border-radius: 1rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.side-panel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.reset-button {
+  background-color: #ff8fa3;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-bottom: 1.5rem;
+}
+
+.reset-button:hover {
+  background-color: #f35f7d;
+}
+
+.modal-box {
+  background-color: white;
+  border: 2px solid #ffb3c1;
+  border-radius: 1rem;
+  padding: 1.5rem;
   text-align: center;
+  max-width: 300px;
 }
 
-/* Crossword pastel pink theme */
-.crossword {
-  --cell-size: 32px;
-  --cell-border: #f8bbd0;
-  --cell-fill: #fff0f5;
-  --cell-fill-highlight: #ffebf0;
-  --cell-fill-dim: #fce4ec;
-  --text-color: #880e4f;
-  --number-color: #ec407a;
+.modal-box h2 {
+  color: #d6336c;
+  margin-bottom: 0.5rem;
 }
 
-.crossword .clues {
-  font-family: sans-serif;
-  color: #6a1b44;
+.modal-box p {
+  margin-bottom: 1rem;
+}
+
+.button-group {
+  display: flex;
+  justify-content: space-around;
+  gap: 1rem;
+}
+
+.button-group button {
+  background-color: #ff8fa3;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+
+.button-group button:hover {
+  background-color: #f35f7d;
 }
