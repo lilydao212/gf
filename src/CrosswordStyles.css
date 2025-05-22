@@ -1,0 +1,49 @@
+/* Layout container to force side-by-side */
+.crossword-container {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  background: white;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  max-width: 1000px;
+  width: 100%;
+}
+
+.crossword-wrapper {
+  flex: 1;
+  min-width: 300px;
+}
+
+.sidebar {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Modal box style */
+.modal {
+  background: #ffe4ec;
+  border: 2px solid #f48fb1;
+  padding: 1rem;
+  border-radius: 1rem;
+  text-align: center;
+}
+
+/* Crossword pastel pink theme */
+.crossword {
+  --cell-size: 32px;
+  --cell-border: #f8bbd0;
+  --cell-fill: #fff0f5;
+  --cell-fill-highlight: #ffebf0;
+  --cell-fill-dim: #fce4ec;
+  --text-color: #880e4f;
+  --number-color: #ec407a;
+}
+
+.crossword .clues {
+  font-family: sans-serif;
+  color: #6a1b44;
+}
