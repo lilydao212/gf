@@ -1,5 +1,5 @@
-import React from "react";
-import CrosswordPage from "./CrosswordPage";
+import React from 'react';
+import CrosswordPage from './CrosswordPage';
 
 function App() {
   return <CrosswordPage />;

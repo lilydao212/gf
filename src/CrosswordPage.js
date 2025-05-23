@@ -1,6 +1,6 @@
 import React, { useState, useRef } from 'react';
 import Crossword from '@jaredreisinger/react-crossword';
-import './CrosswordPage.css';
+import './CrosswordStyles.css';
 
 const data = {
   across: {
@@ -53,7 +53,7 @@ export default function CrosswordPage() {
             <div className="modal">
               <h2 className="text-xl font-bold text-rose-600">You did it!</h2>
               <p className="mt-2 text-base mb-4">
-                One last question... be my girlfriend? ❤️
+                One last question... be my girlfriend? 
               </p>
               <div className="flex gap-3 justify-center">
                 <button

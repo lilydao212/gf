@@ -1,11 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
-import CrosswordPage from './CrosswordPage';
+import App from './App';
+import './index.css'; // if using custom styles
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <CrosswordPage />
+    <App />
   </React.StrictMode>
 );
